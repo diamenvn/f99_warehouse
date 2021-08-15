@@ -6,9 +6,8 @@ import { Input, Button, Form, Spin, Alert } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import Master from './master';
 import './style.sass';
-import Logo from '../../storages/svg/logo_login.svg';
+import Logo from '../../storages/image/logo2.png';
 import { UserAPI } from '../../api/auth/userApi';
-import { GlobalStore } from 'global-store-hook';
 import Cookies from 'js-cookie'
 
 class Login extends Component {
@@ -33,7 +32,7 @@ class Login extends Component {
                         >
                             <img alt="logo" className="logo" src={Logo} />
                             <div className="text mb-30">
-                                <h1 className="fw-bold">Đăng nhập My Team</h1>
+                                <h1 className="fw-bold">Đăng nhập F99 Warehouse</h1>
                             </div>
                             <Alert className={this.state.errLogin ? "d-block" : "d-none"} message={this.state.errMsg} type="error" />
                             <div className="form-control my-10">
