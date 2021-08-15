@@ -1,0 +1,16 @@
+@import '../../style/variables.sass'
+
+.sidebar--layout
+    width: $sideBarWidth
+    min-width: $sideBarWidth
+    background: $sidebarBg
+    .sidebar__item
+        color: white
+        .item
+            padding: 15px 5px
+            box-sizing: border-box
+            border-left: 3px solid transparent
+            &:hover, &.active
+                background: rgba(0, 0, 0, .1)
+                transition: .3s
+                border-left: 3px solid #ffffff

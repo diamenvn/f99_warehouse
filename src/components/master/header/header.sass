@@ -1,0 +1,78 @@
+@import '../../style/variables.sass'
+
+.header--layout 
+    background: $headerBgColor
+    .header__pd-safe
+        width: 100%
+        padding: 0px
+        box-sizing: border-box
+    .logo--layout
+        width: 160px
+        img
+            width: 40px
+            height: 40px
+        span 
+            margin-left: 7px
+    .search--layout
+        padding: 5px !important
+        color: white
+        input
+            background: rgba(0, 0, 0, .1)
+            border: none
+            outline: none
+            font-size: 17px
+            color: inherit
+            padding: 5px 35px 5px 35px
+            box-sizing: border-box
+            border-radius: 5px
+            &::placeholder
+                color: rgba(255, 255, 255, .7)
+            
+        .icon-search
+            left: 15px
+            top: 13px
+            font-size: 20px
+        .icon-entry
+            right: 10px
+            top: 12px
+            font-size: 20px
+    .header__item
+        @include pd(2)
+    .header__profile
+        .profile--layout
+            height: 100%
+            @include pd(5)
+            &:hover
+                background: rgba(0, 0, 0, .1)
+                transition: .3s
+                cursor: pointer
+            .profile_avatar
+                border-radius: 50%
+                background: #fff
+                padding: 0px 5px
+                box-sizing: border-box
+                width: 35px
+                height: 35px
+            .profile_name
+                height: 100%
+                color: rgba(255, 255, 255, .9)
+                padding: 0px 5px
+                box-sizing: border-box
+    .icon__notify--layout
+        .ant-badge-count
+            min-width: 15px !important
+            height: 15px !important
+            padding: 0px 4px !important
+            top: 5px !important
+            right: 8px !important
+            line-height: 15px
+
+.icon--hover
+    &:hover
+        transition: .3s
+        transform: scale(1.09)
+        cursor: pointer
+        user-select: none
+    
+
+

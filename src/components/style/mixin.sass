@@ -1,0 +1,11 @@
+@mixin pd($pd)
+    padding: #{$pd}px
+    box-sizing: border-box
+
+@mixin fs($size)
+    font-size: #{$size}px
+
+@for $i from 1 through 100
+    .fs-#{$i}
+        font-size: #{$i}px
+     
