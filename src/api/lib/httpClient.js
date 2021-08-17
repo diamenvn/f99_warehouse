@@ -32,10 +32,7 @@ const post = (url, data, config = {}) => {
     let q = api_instance.post(url, data, config);
     q.then(res => {
 
-    }).catch(res => {
-        Cookies.remove('_session')
-        // window.location.href = "/";
-    })
+    });
     return q;
 }
 
@@ -43,10 +40,7 @@ const get = (url, data = {}, config = {}) => {
     let q = api_instance.get(url, data, config);
     q.then(res => {
 
-    }).catch(res => {
-        Cookies.remove('_session')
-        // window.location.href = "/";
-    })
+    });
     return q;
 }
 

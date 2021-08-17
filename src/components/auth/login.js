@@ -80,7 +80,7 @@ class Login extends Component {
             const { data } = res;
             if (data.success) {
                 Cookies.set('_session', data.data);
-                window.location.href = "/timekeeping";
+                window.location.href = "/dashboard";
             } else {
                 this.setState({
                     errLogin: true,

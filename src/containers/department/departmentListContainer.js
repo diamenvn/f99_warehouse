@@ -2,13 +2,13 @@ import React, {
     Component
 } from 'react';
 import MasterLayout from '../layout/master';
-import DepartmentList from '../../components/site/department/list/index';
+import Dashboard from '../../components/site/dashboard/list/index';
 
 class DepartmentListContainer extends Component {
     render() {
         return (
             <MasterLayout>
-                <DepartmentList />
+                <Dashboard />
             </MasterLayout>
         );
     }

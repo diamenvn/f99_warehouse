@@ -4,12 +4,15 @@ import React, {
 
 import Login from '../../components/auth/login';
 
-class LoginConatainer extends Component {
-    render() {
+
+function LoginContainer(props) {
+    if (props.token) {
+        window.location.href = "/";
+    }else{
         return (
             <Login />
         );
     }
 }
 
-export default LoginConatainer;
+export default LoginContainer;
